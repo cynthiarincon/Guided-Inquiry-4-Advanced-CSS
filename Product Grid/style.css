@@ -1,0 +1,180 @@
+
+body{background-color: rgb(122, 203, 243);
+    margin: 0px;
+    padding: 0px;}
+
+
+/* ======================== 
+MY NAV BAR INSIDE THE HEADER FOR ALL PAGES
+======================== */
+    ul {display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(3, 43, 64);
+    list-style-type: none;
+    color:rgb(250, 236, 109);
+    padding: 14px 16px;
+    justify-content: center;
+    gap: 150px;
+    font-family: "Delius", cursive;
+    text-transform: uppercase;
+    top: 0px;
+    position:fixed;
+    width: 100%;}
+
+header, header nav, header nav ul {margin: 0;}
+
+/* ======================== 
+MY HOME PAGE GRID
+======================== */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(176, 222, 246);
+    border: 3px dotted rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px 15px;
+    margin: 0 50px;}
+
+
+.grid-container a:visited {color: rgb(250, 236, 109);} 
+.grid-container a:hover{color: rgb(255, 176, 237);} 
+.grid-container a:active {text-decoration: rgb(250, 236, 109);}
+
+.grid-container a {
+    color: rgb(250, 236, 109);
+    text-decoration: none;}
+
+
+ul li a:visited {color: rgb(250, 236, 109);} 
+ul li a:hover{color: rgb(255, 176, 237);} 
+ul li a:active {text-decoration: rgb(250, 236, 109);}
+
+ul li a {
+    text-decoration: none;}
+
+
+
+/* ======================== 
+MAIN WELCOME SECTION
+======================== */
+section {font-family: "Rubik Moonrocks", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;}
+
+
+
+/* ======================== 
+PRODUCT NAMES
+======================== */
+h2 {text-align: center;
+    text-transform: uppercase;}
+
+.fav-stores a {
+    text-decoration: none;
+    color: rgb(250, 236, 109);}
+
+
+
+/* ======================== 
+PRODUCT DESCRIPTION
+======================== */
+p {text-align: center;
+    font-family: "Poiret One", sans-serif;}
+
+/* ======================== 
+PRODUCT IMAGES 
+======================== */
+.image {
+    height: 200px;
+    width: 200px;;
+    object-fit: contain;
+    background-color: white;
+    border: 10px solid rgb(81, 172, 190);
+    border-radius: 12px;}
+
+
+/* ======================== 
+FAVORITE STORES TAB
+======================== */
+.fav-stores {
+    display: grid;
+    place-items: center;
+    border: 2px solid rgb(108, 16, 59);
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: rgb(108, 16, 59);
+    color: rgb(250, 236, 109);
+    box-shadow: 10px 10px 10px rgb(255, 128, 0);}
+
+
+/*I copied my ul li a {} from above and changed to .fav-stores */
+
+.fav-stores a:visited {color: rgb(250, 236, 109);} 
+.fav-stores a:hover{color: rgb(255, 176, 237);} 
+.fav-stores a:active {text-decoration: rgb(250, 236, 109);}
+
+.fav-stores a {
+    text-decoration: none;
+    color:rgb(250, 236, 109)}
+
+/* ======================== 
+RESOURCES TAB
+I copied my .fav-stores and edited
+======================== */
+.resources{ 
+    display: grid;
+    place-items: center;
+    border: 2px solid rgb(6, 32, 150);
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: rgb(6, 32, 150);
+    color: rgb(250, 236, 109);
+    box-shadow: 10px 10px 10px rgb(255, 128, 0);}
+
+.resources a:visited {color: rgb(250, 236, 109);} 
+.resources a:hover{color: rgb(255, 176, 237);} 
+.resources a:active {text-decoration: rgb(250, 236, 109);}
+
+.resources a {
+    text-decoration: none;
+    color: rgb(250, 236, 109);}
+
+
+/* ======================== 
+ANIMATION FOR THE WELCOME TITLE
+======================== */
+@keyframes myAnimation{
+    0% {color: rgb(255, 0, 0);}
+    20% {color: rgb(255, 115, 0);}
+    35% {color: rgb(246, 255, 0);}
+    50% {color: rgb(0, 219, 44);}
+    60% {color: rgb(0, 145, 255);}
+    80% {color: rgb(179, 0, 255);}
+    100% {color:rgb(200, 3, 92);}
+}
+
+section {
+    animation-name: myAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;}
+
+
+/* ======================== 
+FOOTER FOR ALL MY PAGES
+======================== */
+footer {
+    text-align: center;
+    font-family: "Delius", cursive;
+    background-color: rgb(3, 43, 64);
+    color:rgb(250, 236, 109); 
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+    padding: 14px 16px;}

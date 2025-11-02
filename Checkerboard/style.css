@@ -1,0 +1,54 @@
+/* The BLACK tiles */
+.black {
+    background-color: black;
+    height: 100px;
+    width: 100px;}
+
+.black:hover{
+    background-color: aquamarine;
+    cursor: pointer;}
+
+
+/* The WHITE tiles */
+.white {
+    background-color: white;
+    height: 100px;
+    width: 100px;}
+
+.white:hover{
+    background-color: rgb(252, 93, 0);
+    cursor: pointer;}
+
+
+/* The container for the columns */
+.container {
+    display: flex;
+    flex-direction: wrap;
+    border: 2px solid black;
+    padding: 5px;
+    width: fit-content;}
+
+/* Instead of this (which is what I did first, I put in into a container!
+#column-one, #column-two, #column-three, #column-four, #column-five, #column-six, #column-seven, #column-eight 
+{
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+body { 
+    background-color: rgb(249, 191, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+
+h1 {
+  text-align: center;
+  font-family: "New Rocker", system-ui;
+  font-size: 40px;
+  color: rgb(157, 1, 69);}
+
+h1:hover {color: rgb(208, 255, 0);
+    cursor: crosshair;}
+
